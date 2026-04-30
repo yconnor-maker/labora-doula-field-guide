@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The System Wasn't Built for Her — Visual Essay | Labora Collective</title>
+<meta name="description" content="One client's journey through insurance gaps, discrimination, housing instability, and the doula as the only person connecting the pieces.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{--ink:#1a1a1a;--cream:#FAF8F5;--copper:#B87333;--teal:#2A6B6B;--warm-gray:#6B5E54;--rose:#C4736E;--midnight:#0D1117;--gold:#D4A853;--forest:#3A6B5E;}
+html{scroll-behavior:smooth;}body{font-family:'DM Sans',sans-serif;color:var(--cream);background:var(--midnight);line-height:1.7;overflow-x:hidden;}
+.essay-nav{padding:20px 24px;position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(13,17,23,0.9);backdrop-filter:blur(12px);border-bottom:1px solid rgba(184,115,51,0.15);}.essay-nav-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;}.essay-nav a{color:var(--cream);text-decoration:none;font-size:0.85rem;}.essay-nav .back{opacity:0.6;}.essay-nav .brand{font-family:'Cormorant Garamond',serif;font-size:1.1rem;}.essay-nav .brand em{color:var(--copper);}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:40px 24px;background:linear-gradient(180deg,#0D1117 0%,#121a18 50%,#0D1117 100%);}.hero-eyebrow{text-transform:uppercase;letter-spacing:4px;font-size:0.75rem;color:var(--forest);margin-bottom:24px;font-weight:600;}.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,6vw,4.5rem);font-weight:400;line-height:1.1;margin-bottom:24px;max-width:800px;}.hero h1 em{font-style:italic;color:var(--teal);}.hero-sub{font-size:1.1rem;color:var(--warm-gray);max-width:560px;line-height:1.8;margin-bottom:40px;}.scroll-cue{font-size:0.8rem;letter-spacing:3px;text-transform:uppercase;color:var(--teal);opacity:0.5;animation:pulse 2s ease-in-out infinite;}@keyframes pulse{0%,100%{opacity:0.4;transform:translateY(0);}50%{opacity:0.8;transform:translateY(6px);}}
+.chapter{max-width:700px;margin:0 auto;padding:80px 24px;}.chapter-label{text-transform:uppercase;letter-spacing:4px;font-size:0.7rem;color:var(--teal);font-weight:700;margin-bottom:12px;}.chapter h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:400;line-height:1.2;margin-bottom:24px;}.chapter h2 em{color:var(--copper);font-style:italic;}.chapter p{color:rgba(250,248,245,0.75);font-size:1rem;line-height:1.9;margin-bottom:16px;}.chapter p strong{color:var(--cream);font-weight:600;}
+.system-fail{background:rgba(196,115,110,0.08);border-left:3px solid var(--rose);padding:20px 24px;border-radius:0 8px 8px 0;margin:24px 0;}.system-fail .label{font-size:0.7rem;text-transform:uppercase;letter-spacing:2px;color:var(--rose);font-weight:700;margin-bottom:8px;}.system-fail p{color:rgba(250,248,245,0.8);margin:0;font-size:0.95rem;}
+.doula-connect{background:rgba(42,107,107,0.1);border-left:3px solid var(--teal);padding:20px 24px;border-radius:0 8px 8px 0;margin:24px 0;}.doula-connect .label{font-size:0.7rem;text-transform:uppercase;letter-spacing:2px;color:var(--teal);font-weight:700;margin-bottom:8px;}.doula-connect p,.doula-connect ul{color:rgba(250,248,245,0.8);margin:0;font-size:0.95rem;}.doula-connect li{padding:4px 0;}
+.interlude{min-height:40vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:60px 24px;}.interlude blockquote{font-family:'Cormorant Garamond',serif;font-size:clamp(1.4rem,3.5vw,2.2rem);font-weight:400;font-style:italic;line-height:1.4;color:var(--copper);max-width:600px;margin:0 auto 12px;}.interlude cite{font-size:0.85rem;color:var(--warm-gray);font-style:normal;}
+.essay-footer{padding:80px 24px;text-align:center;border-top:1px solid rgba(184,115,51,0.15);}.essay-footer h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;margin-bottom:16px;}.essay-footer p{color:var(--warm-gray);font-size:0.95rem;max-width:500px;margin:0 auto 32px;}.module-links{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;max-width:600px;margin:0 auto;}.module-links a{display:inline-block;padding:8px 16px;background:rgba(184,115,51,0.1);border:1px solid rgba(184,115,51,0.25);border-radius:6px;color:var(--copper);text-decoration:none;font-size:0.8rem;font-weight:600;}.copyright{margin-top:60px;font-size:0.8rem;color:var(--warm-gray);opacity:0.6;}.copyright a{color:var(--copper);text-decoration:none;}
+.fade-in{opacity:0;transform:translateY(20px);transition:opacity 0.8s ease,transform 0.8s ease;}.fade-in.visible{opacity:1;transform:translateY(0);}
+</style>
+</head>
+<body>
+<nav class="essay-nav"><div class="essay-nav-inner"><a href="../" class="back">← Back to Field Guide</a><a href="../" class="brand"><em>Labora</em> Collective</a></div></nav>
+
+<section class="hero">
+  <div class="hero-eyebrow">Visual Essay</div>
+  <h1>The System Wasn't Built <em>for Her</em></h1>
+  <p class="hero-sub">One woman. One pregnancy. Every system failure. This is the story of Janelle — and every client whose survival depends not on medicine, but on connection.</p>
+  <div class="scroll-cue">scroll ↓</div>
+</section>
+
+<div class="chapter fade-in">
+  <div class="chapter-label">Week 12</div>
+  <h2>The Positive Test and <em>the Insurance Gap</em></h2>
+  <p>Janelle is 24. She works two part-time jobs — neither offers health insurance. She's been uninsured for 8 months since aging off her mother's plan. The positive pregnancy test came from a dollar store kit in a gas station bathroom.</p>
+  <p>She calls her old doctor's office. "Do you have insurance?" No. "We can't see you without insurance. Call the Medicaid office." She calls Medicaid. Hold time: 47 minutes. She hangs up. She has to clock in at her second job in 20 minutes.</p>
+  <p>She doesn't have a computer. She doesn't know healthcare.gov exists. She doesn't know that pregnancy is a qualifying life event for marketplace enrollment. She doesn't know about presumptive Medicaid eligibility. She doesn't know about FQHCs.</p>
+  <p><strong>She knows she's pregnant. She doesn't know how to see a doctor.</strong></p>
+  <div class="system-fail"><div class="label">System Failure</div><p>42% of US births are covered by Medicaid — but enrollment barriers prevent timely access. Hold times, paperwork complexity, and lack of in-person navigators mean that women like Janelle start prenatal care late or not at all. Late prenatal care is independently associated with preterm birth, preeclampsia, and maternal mortality.</p></div>
+</div>
+
+<div class="chapter fade-in">
+  <div class="chapter-label">Week 18</div>
+  <h2>The First Appointment — <em>Six Weeks Late</em></h2>
+  <p>Her cousin told her about the community health center. An FQHC. They see everyone regardless of ability to pay. She finally has her first prenatal appointment at 18 weeks — 6 weeks later than recommended.</p>
+  <p>Her blood pressure is 138/88. Not yet diagnostic for gestational hypertension, but trending. No one told her she has risk factors. No one asked where she lives, what she eats, whether she feels safe at home.</p>
+  <p>She fills out paperwork. Checks "no" for domestic violence because her boyfriend is sitting in the waiting room reading the form over her shoulder.</p>
+  <div class="system-fail"><div class="label">System Failure</div><p>The IPV screening happened in the waiting room. With her partner present. The form was in English — her first language, but a written form doesn't create the safety to disclose. She needed to be screened alone, verbally, by someone she trusts. She checked "no" because "yes" would have meant going home to a beating.</p></div>
+</div>
+
+<div class="interlude"><div><blockquote>"The social determinants of health don't just affect health. They ARE health. Address them or watch women die."</blockquote><cite>— Module 22: Housing & Food Insecurity</cite></div></div>
+
+<div class="chapter fade-in">
+  <div class="chapter-label">Week 28</div>
+  <h2>The Eviction Notice and <em>the Rising Pressure</em></h2>
+  <p>Her boyfriend left. The rent was in his name. She gets a 30-day eviction notice while 7 months pregnant. She calls 211. The shelters are full. Her mother's apartment is a 1-bedroom with 4 people already in it.</p>
+  <p>She sleeps on the couch. She misses her next two prenatal appointments because she's trying to find housing. Her blood pressure, unchecked, climbs to 152/96. She has a headache she attributes to stress. Her ankles are swollen. She assumes it's pregnancy.</p>
+  <p><strong>No one is watching.</strong></p>
+</div>
+
+<div class="chapter fade-in">
+  <div class="chapter-label">Week 32</div>
+  <h2>The Doula <em>Changes the Trajectory</em></h2>
+  <p>A community health worker at the FQHC refers her to a doula program — Medicaid-covered in her state. She meets you.</p>
+  <p>First visit: you take her blood pressure. 156/98. You ask about headaches. Yes, daily. Visual changes? "Sometimes sparkly." Swelling? "My face looks puffy."</p>
+  <p>You don't diagnose preeclampsia. You call the FQHC. You drive her to triage. They diagnose severe-range preeclampsia. She's admitted. Betamethasone for fetal lung maturity. Magnesium started. She delivers at 34 weeks. Baby goes to NICU for 2 weeks. Both survive.</p>
+  <div class="doula-connect"><div class="label">What the Doula Connected</div><ul>
+    <li>✓ Blood pressure monitoring at home visit</li>
+    <li>✓ Preeclampsia symptom recognition → same-day triage transport</li>
+    <li>✓ Emergency Medicaid application for delivery (completed at bedside)</li>
+    <li>✓ WIC enrollment during NICU stay</li>
+    <li>✓ Housing authority emergency placement (pregnant/postpartum priority)</li>
+    <li>✓ IPV screening — alone, verbal, trusted relationship → she disclosed</li>
+    <li>✓ DV hotline and safety plan before discharge</li>
+    <li>✓ 12-month postpartum Medicaid extension paperwork</li>
+    <li>✓ SNAP application, Head Start pre-registration</li>
+  </ul></div>
+</div>
+
+<div class="interlude"><div><blockquote>"You are the thread that connects every broken system she touches. Without you, she falls through every gap."</blockquote><cite>— The Connector Tier</cite></div></div>
+
+<div class="chapter fade-in" style="padding-bottom:40px;">
+  <h2>This Is <em>the Connector Tier</em></h2>
+  <p>Janelle's story is not unusual. It is the American maternal health experience for millions of women who are uninsured, underinsured, housing-unstable, food-insecure, fleeing violence, navigating immigration barriers, or incarcerated.</p>
+  <p>The clinical modules teach you to catch the hemorrhage, the preeclampsia, the cardiomyopathy. <strong>The Connector modules teach you to catch everything else that's killing her — the systems designed to confuse, exclude, and fail her.</strong></p>
+  <p>You learned insurance navigation. Housing resources. IPV screening. Immigration barriers. Advocacy language. Complaint pathways. Every one of those skills showed up in Janelle's story. Every one of them was the difference between her survival and a maternal death that would have been classified as "not preventable."</p>
+  <p>It was preventable. <strong>You prevented it.</strong></p>
+</div>
+
+<section class="essay-footer">
+  <h3>Go Deeper</h3>
+  <p>Janelle's story draws from every module in the Connector Tier. Study them — they're the infrastructure of survival.</p>
+  <div class="module-links">
+    <a href="../modules/m19-ipv.html">M19: IPV</a>
+    <a href="../modules/m22-housing.html">M22: Housing</a>
+    <a href="../modules/m23-insurance.html">M23: Insurance</a>
+    <a href="../modules/m24-advocacy.html">M24: Advocacy</a>
+    <a href="../modules/m01-hypertension.html">M1: Hypertension</a>
+    <a href="../modules/m14-htn-emergencies.html">M14: HTN Emergencies</a>
+  </div>
+  <p class="copyright">© 2026 Labora Collective · <a href="https://diosara.com">A Diosa Ara Initiative</a> · Dr. Yamicia Connor, MD, OBGYN</p>
+</section>
+<script>const els=document.querySelectorAll('.fade-in');const obs=new IntersectionObserver(e=>{e.forEach(en=>{if(en.isIntersecting)en.target.classList.add('visible');});},{threshold:0.15});els.forEach(el=>obs.observe(el));</script>
+</body></html>

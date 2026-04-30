@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Hardest Day — Visual Essay | Labora Collective</title>
+<meta name="description" content="Walking into the room after a stillbirth diagnosis. What you say. What you don't. What happens to her body after.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{--cream:#FAF8F5;--copper:#B87333;--teal:#2A6B6B;--warm-gray:#6B5E54;--rose:#C4736E;--midnight:#0D1117;}
+html{scroll-behavior:smooth;}body{font-family:'DM Sans',sans-serif;color:var(--cream);background:var(--midnight);line-height:1.7;overflow-x:hidden;}
+.essay-nav{padding:20px 24px;position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(13,17,23,0.9);backdrop-filter:blur(12px);border-bottom:1px solid rgba(184,115,51,0.15);}.essay-nav-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;}.essay-nav a{color:var(--cream);text-decoration:none;font-size:0.85rem;}.essay-nav .back{opacity:0.6;}.essay-nav .brand{font-family:'Cormorant Garamond',serif;font-size:1.1rem;}.essay-nav .brand em{color:var(--copper);}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:40px 24px;background:linear-gradient(180deg,#0D1117 0%,#14121a 50%,#0D1117 100%);}.hero-eyebrow{text-transform:uppercase;letter-spacing:4px;font-size:0.75rem;color:var(--warm-gray);margin-bottom:24px;font-weight:600;}.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,7vw,5rem);font-weight:400;line-height:1.1;margin-bottom:24px;max-width:700px;}.hero h1 em{font-style:italic;color:var(--warm-gray);}.hero-sub{font-size:1.05rem;color:rgba(250,248,245,0.5);max-width:500px;line-height:1.8;margin-bottom:40px;font-style:italic;}.scroll-cue{font-size:0.8rem;letter-spacing:3px;text-transform:uppercase;color:var(--warm-gray);opacity:0.4;animation:pulse 2.5s ease-in-out infinite;}@keyframes pulse{0%,100%{opacity:0.3;transform:translateY(0);}50%{opacity:0.6;transform:translateY(6px);}}
+.chapter{max-width:660px;margin:0 auto;padding:80px 24px;}.chapter p{color:rgba(250,248,245,0.7);font-size:1rem;line-height:2;margin-bottom:18px;}.chapter p strong{color:var(--cream);}.chapter p em{color:var(--copper);}
+.breath{min-height:30vh;display:flex;align-items:center;justify-content:center;}.breath p{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-style:italic;color:rgba(250,248,245,0.3);text-align:center;max-width:500px;padding:0 24px;}
+.gentle-box{background:rgba(107,94,84,0.08);border-left:3px solid var(--warm-gray);padding:20px 24px;border-radius:0 8px 8px 0;margin:24px 0;}.gentle-box .label{font-size:0.7rem;text-transform:uppercase;letter-spacing:2px;color:var(--warm-gray);font-weight:700;margin-bottom:8px;}.gentle-box p{color:rgba(250,248,245,0.7);margin:0 0 8px;font-size:0.95rem;}.gentle-box p:last-child{margin:0;}
+.say-box{background:rgba(42,107,107,0.08);border-left:3px solid var(--teal);padding:20px 24px;border-radius:0 8px 8px 0;margin:24px 0;}.say-box .label{font-size:0.7rem;text-transform:uppercase;letter-spacing:2px;color:var(--teal);font-weight:700;margin-bottom:12px;}.say-box ul{list-style:none;padding:0;margin:0;}.say-box li{padding:6px 0;color:rgba(250,248,245,0.75);font-size:0.95rem;font-style:italic;}
+.dontsay-box{background:rgba(196,115,110,0.06);border-left:3px solid var(--rose);padding:20px 24px;border-radius:0 8px 8px 0;margin:24px 0;}.dontsay-box .label{font-size:0.7rem;text-transform:uppercase;letter-spacing:2px;color:var(--rose);font-weight:700;margin-bottom:12px;}.dontsay-box ul{list-style:none;padding:0;margin:0;}.dontsay-box li{padding:6px 0;color:rgba(250,248,245,0.6);font-size:0.95rem;text-decoration:line-through;opacity:0.7;}
+.essay-footer{padding:80px 24px;text-align:center;border-top:1px solid rgba(184,115,51,0.1);}.essay-footer h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;margin-bottom:16px;}.essay-footer p{color:var(--warm-gray);font-size:0.95rem;max-width:500px;margin:0 auto 32px;}.module-links{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;max-width:400px;margin:0 auto;}.module-links a{display:inline-block;padding:8px 16px;background:rgba(184,115,51,0.1);border:1px solid rgba(184,115,51,0.2);border-radius:6px;color:var(--copper);text-decoration:none;font-size:0.8rem;font-weight:600;}.copyright{margin-top:60px;font-size:0.8rem;color:var(--warm-gray);opacity:0.5;}.copyright a{color:var(--copper);text-decoration:none;}
+.fade-in{opacity:0;transform:translateY(20px);transition:opacity 1s ease,transform 1s ease;}.fade-in.visible{opacity:1;transform:translateY(0);}
+</style>
+</head>
+<body>
+<nav class="essay-nav"><div class="essay-nav-inner"><a href="../" class="back">← Back to Field Guide</a><a href="../" class="brand"><em>Labora</em> Collective</a></div></nav>
+
+<section class="hero">
+  <div class="hero-eyebrow">Visual Essay</div>
+  <h1>The Hardest <em>Day</em></h1>
+  <p class="hero-sub">This essay is about stillbirth, pregnancy loss, and being present in a room where nothing you say will fix anything. Read it when you're ready.</p>
+  <div class="scroll-cue">scroll ↓</div>
+</section>
+
+<div class="chapter fade-in">
+  <p>The phone rings. It's your client. She's 36 weeks pregnant. She says: <em>"The baby isn't moving."</em></p>
+  <p>You tell her to go to the hospital. You say you'll meet her there. You drive. You don't know yet. But you know.</p>
+  <p>When you arrive, she's on the monitor. The nurse is quiet. The doctor comes in. He sits down — doctors don't sit down for good news.</p>
+  <p><strong>"I'm so sorry. There is no heartbeat."</strong></p>
+  <p>The room stops. Time doesn't pass — it collapses. She screams, or she goes silent, or she says "no" over and over, or she stares at the ceiling. There is no standard reaction. There is no right reaction. There is only this moment, and you are in it with her.</p>
+</div>
+
+<div class="breath"><p>You cannot fix this. You are not here to fix this.</p></div>
+
+<div class="chapter fade-in">
+  <p>She will have to deliver the baby. Not today, unless she chooses to. But soon. A stillborn baby at 36 weeks is delivered vaginally in most cases — induction, labor, delivery. She will labor. She will push. She will deliver a baby who will not cry.</p>
+  <p>This is the cruelest thing the human body is asked to do.</p>
+  <p>Your job is to be present. Not cheerful. Not optimistic. Not therapeutic. <strong>Present.</strong> Quietly, completely, unflinchingly present.</p>
+  <div class="say-box"><div class="label">What You Can Say</div><ul>
+    <li>"I am so sorry."</li>
+    <li>"I'm here. I'm not going anywhere."</li>
+    <li>"Your baby is beautiful."</li>
+    <li>"Would you like to hold her?"</li>
+    <li>"Can I take a photo for you?"</li>
+    <li>"There is nothing you did to cause this."</li>
+    <li>Nothing at all. Silence is acceptable. Silence is often best.</li>
+  </ul></div>
+  <div class="dontsay-box"><div class="label">What You Must Never Say</div><ul>
+    <li>"Everything happens for a reason."</li>
+    <li>"At least you can have another baby."</li>
+    <li>"She's in a better place."</li>
+    <li>"Be strong."</li>
+    <li>"I know how you feel."</li>
+    <li>"God needed another angel."</li>
+  </ul></div>
+</div>
+
+<div class="breath"><p>Her milk will come in. Her body doesn't know the baby died.</p></div>
+
+<div class="chapter fade-in">
+  <p>On day 3, her breasts will fill. Her body prepared for a baby that isn't there. This is one of the most devastating physical experiences of loss — the body continuing a process that the mind knows is no longer needed.</p>
+  <p><strong>Ice packs. Tight bra. Cabbage leaves. Pseudoephedrine.</strong> These reduce engorgement. Some women choose to pump and donate the milk. Some cannot bear to. Both responses are valid.</p>
+  <p>Her uterus will contract. She will bleed. She will have afterpains. Every physical sensation of postpartum recovery will occur — without the baby.</p>
+  <div class="gentle-box"><div class="label">Memory-Making</div><p>Ask if she wants to hold the baby. For minutes or for hours. Ask if she wants photos — many hospitals have volunteer photographers (Now I Lay Me Down to Sleep). Hand and foot prints. A lock of hair. A blanket that smells like the baby.</p>
+  <p>She may not want any of this today. But in 6 months, in 2 years, in 10 years — she may want proof that this baby existed. Create the option. She decides when to use it.</p></div>
+</div>
+
+<div class="chapter fade-in">
+  <p>In the weeks that follow, she will grieve in a culture that doesn't know how to hold pregnancy loss. People will avoid her. People will say the wrong thing. People will expect her to "move on" by a timeline that exists only in their discomfort.</p>
+  <p>Your continued presence — a text, a visit, a meal, a phone call on the due date that was, a phone call on the anniversary — is the doula care that no one pays for and everyone needs.</p>
+  <p><strong>You will grieve too.</strong> This is vicarious trauma. Debrief with a colleague, a therapist, a supervisor. You cannot pour from an empty cup, and you cannot hold grief you haven't processed.</p>
+</div>
+
+<div class="breath"><p>You showed up on the hardest day. That is the bravest thing a doula does.</p></div>
+
+<section class="essay-footer">
+  <h3>Go Deeper</h3>
+  <p>This essay draws from the full bereavement protocol.</p>
+  <div class="module-links">
+    <a href="../modules/m28-bereavement.html">M28: Bereavement & Loss</a>
+    <a href="../modules/m11-pmads.html">M11: PMADs</a>
+  </div>
+  <p class="copyright">© 2026 Labora Collective · <a href="https://diosara.com">A Diosa Ara Initiative</a> · Dr. Yamicia Connor, MD, OBGYN</p>
+</section>
+<script>const els=document.querySelectorAll('.fade-in');const obs=new IntersectionObserver(e=>{e.forEach(en=>{if(en.isIntersecting)en.target.classList.add('visible');});},{threshold:0.15});els.forEach(el=>obs.observe(el));</script>
+</body></html>

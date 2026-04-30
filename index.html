@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Doula Field Guide — Full Compendium | Labora Collective</title>
 <meta name="description" content="30 modules of clinical perinatal education for birthworkers. Built by an OB/GYN for doulas, CHWs, and anyone who supports birthing families.">
+<meta name="theme-color" content="#1a1a1a">
+<link rel="manifest" href="manifest.json">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,7 +14,10 @@
 <nav class="app-nav">
   <div class="app-nav-inner">
     <a href="/" class="app-nav-brand"><em>Labora</em> Collective <span class="nav-sub">Doula Field Guide</span></a>
-    <ul class="app-nav-links">
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="app-nav-links" id="navLinks">
       <li><a href="#basic">Basic</a></li>
       <li><a href="#intermediate">Intermediate</a></li>
       <li><a href="#advanced">Advanced</a></li>
@@ -191,16 +196,16 @@
     <p class="tier-desc">The things killing women happen outside the hospital. IPV, housing instability, insurance denials, immigration fear, incarceration. The doula as connector — linking clients to the resources that determine whether they survive.</p>
   </div>
   <div class="module-grid">
-    <a href="modules/m19-ipv.html" class="module-card connector"><div class="module-num">Module 19</div><h3 class="module-title">IPV & Maternal Homicide</h3><p class="module-desc">Intimate partner violence screening, safety planning, and the leading cause of maternal death.</p><div class="module-meta"><span>7 cards</span><span>10 MCQs</span><span>1 pathway</span></div></a>
+    <a href="modules/m19-ipv.html" class="module-card connector"><div class="module-num">Module 19</div><h3 class="module-title">IPV &amp; Maternal Homicide</h3><p class="module-desc">Intimate partner violence screening, safety planning, and the leading cause of maternal death.</p><div class="module-meta"><span>7 cards</span><span>10 MCQs</span><span>1 pathway</span></div></a>
     <a href="modules/m20-suicide.html" class="module-card connector"><div class="module-num">Module 20</div><h3 class="module-title">Maternal Suicide</h3><p class="module-desc">Crisis recognition, lethal means counseling, and the second leading cause of maternal death.</p><div class="module-meta"><span>7 cards</span><span>10 MCQs</span><span>1 pathway</span></div></a>
     <a href="modules/m21-substance.html" class="module-card connector"><div class="module-num">Module 21</div><h3 class="module-title">Substance Use</h3><p class="module-desc">Harm reduction, MAT support, NAS, naloxone, and navigating the criminalization of addiction in pregnancy.</p><div class="module-meta"><span>7 cards</span><span>10 MCQs</span><span>1 pathway</span></div></a>
-    <a href="modules/m22-housing.html" class="module-card connector"><div class="module-num">Module 22</div><h3 class="module-title">Housing & Food Insecurity</h3><p class="module-desc">Shelter navigation, WIC, SNAP, and the cascading health effects of instability.</p><div class="module-meta"><span>7 cards</span><span>10 MCQs</span></div></a>
-    <a href="modules/m23-insurance.html" class="module-card connector"><div class="module-num">Module 23</div><h3 class="module-title">Insurance & System Navigation</h3><p class="module-desc">Medicaid, marketplace plans, postpartum coverage gaps, and appeals processes.</p><div class="module-meta"><span>7 cards</span><span>10 MCQs</span></div></a>
-    <a href="modules/m24-advocacy.html" class="module-card connector"><div class="module-num">Module 24</div><h3 class="module-title">Advocacy & Discrimination</h3><p class="module-desc">Medical racism, informed consent, refusal rights, and filing complaints that matter.</p><div class="module-meta"><span>7 cards</span><span>10 MCQs</span></div></a>
+    <a href="modules/m22-housing.html" class="module-card connector"><div class="module-num">Module 22</div><h3 class="module-title">Housing &amp; Food Insecurity</h3><p class="module-desc">Shelter navigation, WIC, SNAP, and the cascading health effects of instability.</p><div class="module-meta"><span>7 cards</span><span>10 MCQs</span></div></a>
+    <a href="modules/m23-insurance.html" class="module-card connector"><div class="module-num">Module 23</div><h3 class="module-title">Insurance &amp; System Navigation</h3><p class="module-desc">Medicaid, marketplace plans, postpartum coverage gaps, and appeals processes.</p><div class="module-meta"><span>7 cards</span><span>10 MCQs</span></div></a>
+    <a href="modules/m24-advocacy.html" class="module-card connector"><div class="module-num">Module 24</div><h3 class="module-title">Advocacy &amp; Discrimination</h3><p class="module-desc">Medical racism, informed consent, refusal rights, and filing complaints that matter.</p><div class="module-meta"><span>7 cards</span><span>10 MCQs</span></div></a>
     <a href="modules/m25-immigration.html" class="module-card connector"><div class="module-num">Module 25</div><h3 class="module-title">Immigration Barriers</h3><p class="module-desc">Public charge fears, emergency Medicaid, language access, and serving undocumented clients.</p><div class="module-meta"><span>7 cards</span><span>10 MCQs</span></div></a>
     <a href="modules/m26-justice.html" class="module-card connector"><div class="module-num">Module 26</div><h3 class="module-title">Justice-Involved Clients</h3><p class="module-desc">Incarcerated pregnancy, shackling bans, reentry planning, and the rights that don't disappear.</p><div class="module-meta"><span>7 cards</span><span>10 MCQs</span></div></a>
     <a href="modules/m27-teen.html" class="module-card connector"><div class="module-num">Module 27</div><h3 class="module-title">Teen Pregnancy</h3><p class="module-desc">Adolescent consent, Title IX, age-gap screening, and supporting the youngest clients.</p><div class="module-meta"><span>7 cards</span><span>10 MCQs</span></div></a>
-    <a href="modules/m28-bereavement.html" class="module-card connector"><div class="module-num">Module 28</div><h3 class="module-title">Bereavement & Loss</h3><p class="module-desc">Stillbirth, miscarriage, TFMR — memory-making, grief support, and being present in pain.</p><div class="module-meta"><span>7 cards</span><span>10 MCQs</span></div></a>
+    <a href="modules/m28-bereavement.html" class="module-card connector"><div class="module-num">Module 28</div><h3 class="module-title">Bereavement &amp; Loss</h3><p class="module-desc">Stillbirth, miscarriage, TFMR — memory-making, grief support, and being present in pain.</p><div class="module-meta"><span>7 cards</span><span>10 MCQs</span></div></a>
     <a href="modules/m29-work.html" class="module-card connector"><div class="module-num">Module 29</div><h3 class="module-title">Returning to Work</h3><p class="module-desc">FMLA, PUMP Act, pumping rights, pregnancy discrimination, and the 6-week lie.</p><div class="module-meta"><span>7 cards</span><span>10 MCQs</span></div></a>
     <a href="modules/m30-childcare.html" class="module-card connector"><div class="module-num">Module 30</div><h3 class="module-title">Childcare Access</h3><p class="module-desc">Subsidies, childcare deserts, safety evaluation, and the infrastructure crisis behind the curtain.</p><div class="module-meta"><span>7 cards</span><span>10 MCQs</span></div></a>
   </div>
@@ -256,14 +261,14 @@
       <div class="module-num">Basic Tier</div>
       <h3 class="module-title" style="font-size:2rem;">$29</h3>
       <p class="module-desc">6 modules + Field Kit access + MCQs</p>
-      <a href="#" style="display:inline-block;background:var(--teal);color:white;padding:12px 28px;border-radius:6px;text-decoration:none;font-family:var(--font-ui);font-weight:600;margin-top:12px;">Get Basic</a>
+      <a href="https://buy.stripe.com/PLACEHOLDER_BASIC_29" id="btn-basic" style="display:inline-block;background:var(--teal);color:white;padding:12px 28px;border-radius:6px;text-decoration:none;font-family:var(--font-ui);font-weight:600;margin-top:12px;">Get Basic</a>
     </div>
     <div class="module-card connector" style="text-align:center;padding:40px 24px;border:2px solid var(--forest);">
       <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--forest);color:white;padding:4px 14px;border-radius:20px;font-family:var(--font-ui);font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;">Best Value</div>
       <div class="module-num">Full Compendium</div>
       <h3 class="module-title" style="font-size:2rem;">$69</h3>
       <p class="module-desc">All 30 modules + Field Kit + visual essays + in-person companion</p>
-      <a href="#" style="display:inline-block;background:var(--forest);color:white;padding:12px 28px;border-radius:6px;text-decoration:none;font-family:var(--font-ui);font-weight:600;margin-top:12px;">Get Everything</a>
+      <a href="https://buy.stripe.com/PLACEHOLDER_FULL_69" id="btn-full" style="display:inline-block;background:var(--forest);color:white;padding:12px 28px;border-radius:6px;text-decoration:none;font-family:var(--font-ui);font-weight:600;margin-top:12px;">Get Everything</a>
     </div>
   </div>
   <p style="margin-top:24px;font-family:var(--font-ui);font-size:0.8rem;color:var(--warm-gray);">One-time purchase · No subscription · Instant access</p>
@@ -290,6 +295,37 @@
     <div class="footer-bottom"><p>© 2026 Labora Collective · <a href="https://diosara.com">diosara.com</a></p></div>
   </div>
 </footer>
+
+<!-- Hamburger menu script -->
+<script>
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+if (hamburger) {
+  hamburger.addEventListener('click', () => {
+    const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+    hamburger.setAttribute('aria-expanded', !expanded);
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('open');
+  });
+  // Close menu when a nav link is clicked
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      navLinks.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+    });
+  });
+}
+</script>
+
+<!-- Service Worker registration -->
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js').catch(() => {});
+  });
+}
+</script>
 
 </body>
 </html>

@@ -1,0 +1,19 @@
+{
+  "name": "Doula Field Guide — Labora Collective",
+  "short_name": "Field Guide",
+  "description": "30 modules of clinical perinatal education for birthworkers — from vital signs to systemic violence. Built by an OB/GYN.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF8F5",
+  "theme_color": "#1a1a1a",
+  "orientation": "any",
+  "categories": ["education", "medical", "health"],
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%231a1a1a' width='100' height='100' rx='20'/><text x='50' y='42' font-family='serif' font-size='28' fill='%23B87333' text-anchor='middle'>Labora</text><text x='50' y='68' font-family='sans-serif' font-size='14' fill='%23FAF8F5' text-anchor='middle'>FIELD GUIDE</text></svg>",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

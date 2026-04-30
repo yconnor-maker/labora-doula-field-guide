@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The First 72 Hours — Visual Essay | Labora Collective</title>
+<meta name="description" content="A narrative walk through the most dangerous window in a new mother's life — and why your presence as a doula changes everything.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --ink:#1a1a1a;--cream:#FAF8F5;--copper:#B87333;--copper-light:#F5EDE4;
+  --teal:#2A6B6B;--teal-light:#E8F4F4;--warm-gray:#6B5E54;
+  --rose:#C4736E;--midnight:#0D1117;--gold:#D4A853;
+}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;color:var(--cream);background:var(--midnight);line-height:1.7;overflow-x:hidden;}
+
+/* ── HERO ── */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:40px 24px;position:relative;background:linear-gradient(180deg,#0D1117 0%,#1a1520 50%,#0D1117 100%);}
+.hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse at 50% 40%,rgba(184,115,51,0.08) 0%,transparent 70%);pointer-events:none;}
+.hero-eyebrow{font-family:'DM Sans',sans-serif;text-transform:uppercase;letter-spacing:4px;font-size:0.75rem;color:var(--copper);margin-bottom:24px;font-weight:600;}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,7vw,5rem);font-weight:400;line-height:1.1;margin-bottom:24px;color:var(--cream);max-width:800px;}
+.hero h1 em{font-style:italic;color:var(--copper);}
+.hero-sub{font-size:1.1rem;color:var(--warm-gray);max-width:560px;line-height:1.8;margin-bottom:40px;}
+.hero-scroll{font-size:0.8rem;letter-spacing:3px;text-transform:uppercase;color:var(--copper);opacity:0.6;animation:pulse 2s ease-in-out infinite;}
+@keyframes pulse{0%,100%{opacity:0.4;transform:translateY(0);}50%{opacity:0.8;transform:translateY(6px);}}
+
+/* ── TIMELINE ── */
+.timeline{position:relative;max-width:760px;margin:0 auto;padding:0 24px;}
+.timeline::before{content:'';position:absolute;left:24px;top:0;bottom:0;width:2px;background:linear-gradient(180deg,transparent,var(--copper) 10%,var(--copper) 90%,transparent);opacity:0.3;}
+@media(min-width:640px){.timeline::before{left:50%;transform:translateX(-1px);}}
+
+.chapter{position:relative;padding:80px 0 60px 48px;opacity:0;transform:translateY(30px);animation:fadeUp 0.6s ease forwards;}
+@media(min-width:640px){.chapter{padding:100px 0 80px 0;text-align:left;}}
+@keyframes fadeUp{to{opacity:1;transform:translateY(0);}}
+
+.time-marker{position:absolute;left:12px;top:80px;width:26px;height:26px;background:var(--midnight);border:2px solid var(--copper);border-radius:50%;z-index:2;display:flex;align-items:center;justify-content:center;}
+.time-marker::after{content:'';width:8px;height:8px;background:var(--copper);border-radius:50%;}
+@media(min-width:640px){.time-marker{left:50%;transform:translateX(-13px);top:100px;}}
+
+.time-label{font-family:'DM Sans',sans-serif;text-transform:uppercase;letter-spacing:3px;font-size:0.7rem;color:var(--copper);font-weight:700;margin-bottom:12px;}
+.chapter h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:400;line-height:1.2;margin-bottom:20px;color:var(--cream);}
+.chapter h2 em{color:var(--copper);font-style:italic;}
+.chapter p{color:rgba(250,248,245,0.75);font-size:1rem;line-height:1.9;margin-bottom:16px;max-width:600px;}
+.chapter p strong{color:var(--cream);font-weight:600;}
+@media(min-width:640px){.chapter-content{max-width:48%;}.chapter:nth-child(odd) .chapter-content{margin-left:54%;}.chapter:nth-child(even) .chapter-content{margin-right:54%;text-align:right;}.chapter:nth-child(even) .chapter-content p{margin-left:auto;}}
+
+/* ── CALLOUT BOXES ── */
+.physician-note{background:rgba(184,115,51,0.08);border-left:3px solid var(--copper);padding:20px 24px;border-radius:0 8px 8px 0;margin:24px 0;font-size:0.95rem;}
+.physician-note .note-label{font-family:'DM Sans',sans-serif;font-size:0.7rem;text-transform:uppercase;letter-spacing:2px;color:var(--copper);font-weight:700;margin-bottom:8px;}
+.physician-note p{color:rgba(250,248,245,0.8);font-style:italic;margin:0;}
+
+.red-flag{background:rgba(196,115,110,0.1);border-left:3px solid var(--rose);padding:20px 24px;border-radius:0 8px 8px 0;margin:24px 0;}
+.red-flag .flag-label{font-size:0.7rem;text-transform:uppercase;letter-spacing:2px;color:var(--rose);font-weight:700;margin-bottom:8px;}
+.red-flag ul{list-style:none;padding:0;}
+.red-flag li{padding:4px 0;padding-left:16px;position:relative;color:rgba(250,248,245,0.75);font-size:0.95rem;}
+.red-flag li::before{content:'⚠';position:absolute;left:0;font-size:0.7rem;}
+
+.doula-moment{background:rgba(42,107,107,0.12);border-left:3px solid var(--teal);padding:20px 24px;border-radius:0 8px 8px 0;margin:24px 0;}
+.doula-moment .moment-label{font-size:0.7rem;text-transform:uppercase;letter-spacing:2px;color:var(--teal);font-weight:700;margin-bottom:8px;}
+.doula-moment p{color:rgba(250,248,245,0.8);margin:0;}
+
+/* ── TRANSITION SCREENS ── */
+.interlude{min-height:60vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:60px 24px;position:relative;}
+.interlude-inner{max-width:600px;}
+.interlude blockquote{font-family:'Cormorant Garamond',serif;font-size:clamp(1.6rem,4vw,2.4rem);font-weight:400;font-style:italic;line-height:1.4;color:var(--copper);margin-bottom:16px;}
+.interlude cite{font-family:'DM Sans',sans-serif;font-size:0.85rem;color:var(--warm-gray);font-style:normal;}
+
+/* ── NAV ── */
+.essay-nav{padding:20px 24px;position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(13,17,23,0.9);backdrop-filter:blur(12px);border-bottom:1px solid rgba(184,115,51,0.15);}
+.essay-nav-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;}
+.essay-nav a{color:var(--cream);text-decoration:none;font-size:0.85rem;}
+.essay-nav .back{opacity:0.6;transition:opacity 0.2s;}
+.essay-nav .back:hover{opacity:1;}
+.essay-nav .brand{font-family:'Cormorant Garamond',serif;font-size:1.1rem;}
+.essay-nav .brand em{color:var(--copper);}
+
+/* ── FOOTER ── */
+.essay-footer{padding:80px 24px;text-align:center;border-top:1px solid rgba(184,115,51,0.15);}
+.essay-footer h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;margin-bottom:16px;color:var(--cream);}
+.essay-footer p{color:var(--warm-gray);font-size:0.95rem;max-width:500px;margin:0 auto 32px;}
+.module-links{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;max-width:600px;margin:0 auto;}
+.module-links a{display:inline-block;padding:8px 16px;background:rgba(184,115,51,0.1);border:1px solid rgba(184,115,51,0.25);border-radius:6px;color:var(--copper);text-decoration:none;font-size:0.8rem;font-weight:600;transition:all 0.2s;}
+.module-links a:hover{background:rgba(184,115,51,0.2);border-color:var(--copper);}
+.copyright{margin-top:60px;font-size:0.8rem;color:var(--warm-gray);opacity:0.6;}
+.copyright a{color:var(--copper);text-decoration:none;}
+
+/* ── SCROLL ANIMATION ── */
+.chapter{animation-delay:0s;}.chapter:nth-child(1){animation-delay:0.1s;}.chapter:nth-child(2){animation-delay:0.15s;}
+</style>
+</head>
+<body>
+
+<nav class="essay-nav">
+  <div class="essay-nav-inner">
+    <a href="../" class="back">← Back to Field Guide</a>
+    <a href="../" class="brand"><em>Labora</em> Collective</a>
+  </div>
+</nav>
+
+<!-- ═══════════ HERO ═══════════ -->
+<section class="hero">
+  <div class="hero-eyebrow">Visual Essay</div>
+  <h1>The First <em>72 Hours</em></h1>
+  <p class="hero-sub">She delivered a healthy baby. Everyone is smiling. The room is full of flowers. And the most dangerous window of her life just opened. This is what you're watching for.</p>
+  <div class="hero-scroll">scroll ↓</div>
+</section>
+
+<!-- ═══════════ TIMELINE ═══════════ -->
+<div class="timeline">
+
+  <!-- HOUR 1 -->
+  <div class="chapter">
+    <div class="time-marker"></div>
+    <div class="chapter-content">
+      <div class="time-label">Hour 1</div>
+      <h2>The Golden Hour — <em>and the Hidden Clock</em></h2>
+      <p>The baby is on her chest. Skin to skin. The room softens. Her partner is crying. The nurse is charting. The OB is repairing a laceration. Everyone exhales.</p>
+      <p>You don't.</p>
+      <p>Because you know something most people in this room don't talk about: <strong>the first hour after delivery is the highest-risk window for postpartum hemorrhage.</strong> The placenta has detached. The uterine vessels that were feeding it are open. The only thing stopping her from bleeding to death is her uterus contracting — clamping those vessels shut like a fist.</p>
+      <p>You watch. Her fundus — the top of the uterus — should feel firm. Like a grapefruit through the belly. If it softens, if it rises, if the nurse increases the Pitocin drip — you notice. You don't panic. You notice.</p>
+      <div class="physician-note">
+        <div class="note-label">From the Physician</div>
+        <p>The golden hour is for bonding. It's also for vigilance. The uterus should contract after placental delivery — firm, midline, at or below the umbilicus. A boggy uterus is the first sign of atony, and atony is the cause of 80% of postpartum hemorrhage. Watch the fundus. Watch the pad. Watch her face.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- HOUR 4 -->
+  <div class="chapter">
+    <div class="time-marker"></div>
+    <div class="chapter-content">
+      <div class="time-label">Hour 4</div>
+      <h2>She Says She's <em>Fine</em></h2>
+      <p>She's been moved to the postpartum room. The adrenaline is fading. She's trying to breastfeed. The baby latches, then doesn't. Latches again. She winces.</p>
+      <p>"How are you feeling?"</p>
+      <p>"Fine. Just tired."</p>
+      <p><strong>Fine.</strong> The word that hides everything. You ask the real questions:</p>
+      <p><em>"Are you lightheaded at all?" "How's the bleeding — heavier, lighter, or the same?" "Any pain that's different from what they told you to expect?"</em></p>
+      <p>She pauses. "Actually... I do feel kind of dizzy when I sit up."</p>
+      <p>You check the pad. It's saturated. You check the time — she changed it 40 minutes ago. You press the call button.</p>
+      <div class="doula-moment">
+        <div class="moment-label">The Doula Moment</div>
+        <p>She said she was fine. You asked one more question. That question — "are you lightheaded?" — is the question that catches compensated shock before the blood pressure drops. Dizziness with position change + saturated pad = escalate now.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- HOUR 12 -->
+  <div class="chapter">
+    <div class="time-marker"></div>
+    <div class="chapter-content">
+      <div class="time-label">Hour 12</div>
+      <h2>The Night <em>No One Sees</em></h2>
+      <p>2 AM. The hallway is quiet. Her partner is asleep on the pullout. The baby is crying. She hasn't slept. Her body is shaking — afterpains with each breastfeed, cramps that feel like labor contractions. Her perineum burns. Her nipples are raw.</p>
+      <p>This is the hour no one talks about.</p>
+      <p>She is alone with a body she doesn't recognize, a baby she doesn't yet know how to feed, and a pain no one warned her about. The hormone crash is beginning. Estrogen and progesterone are plummeting. By tomorrow, she may cry at a commercial.</p>
+      <p>If you're there — even by text — you are the tether. <strong>"This is normal. You are not failing. The shaking stops. The afterpains ease. You are doing the hardest thing."</strong></p>
+    </div>
+  </div>
+</div>
+
+<!-- INTERLUDE -->
+<section class="interlude">
+  <div class="interlude-inner">
+    <blockquote>"Most maternal emergencies don't announce themselves. They whisper — and then they scream."</blockquote>
+    <cite>— Dr. Yamicia Connor, MD, OBGYN</cite>
+  </div>
+</section>
+
+<div class="timeline">
+
+  <!-- DAY 2 -->
+  <div class="chapter">
+    <div class="time-marker"></div>
+    <div class="chapter-content">
+      <div class="time-label">Day 2</div>
+      <h2>The Discharge <em>Gamble</em></h2>
+      <p>24–48 hours after delivery, she's going home. The nurse gives her a stack of papers. Postpartum instructions, lactation handouts, a follow-up appointment in 6 weeks. Six weeks. Forty-two days of no medical surveillance during the most physiologically volatile period of her life.</p>
+      <p>She hasn't voided since the catheter was removed. Her blood pressure was "borderline" at the last check but "we'll keep an eye on it." Her hemoglobin dropped but "not enough for a transfusion." The baby lost 8% of birth weight — "normal."</p>
+      <p>She goes home with: ibuprofen, a peri-bottle, and hope.</p>
+      <p><strong>You go home with her — as the only trained observer she'll have for the next 6 weeks.</strong></p>
+      <div class="red-flag">
+        <div class="flag-label">The Discharge Gap</div>
+        <ul>
+          <li>40% of eclamptic seizures occur postpartum — most after discharge</li>
+          <li>Blood pressure peaks at days 3–6 — she's home by then</li>
+          <li>Wound infections declare at days 4–7 — she's home by then</li>
+          <li>DVT/PE risk peaks in the first 2 weeks — she's home by then</li>
+          <li>Her next scheduled visit: 6 weeks</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 3 -->
+  <div class="chapter">
+    <div class="time-marker"></div>
+    <div class="chapter-content">
+      <div class="time-label">Day 3</div>
+      <h2>The Milk, The Tears, <em>The Shift</em></h2>
+      <p>Her milk comes in. Her breasts are rocks. The baby is screaming. She is sobbing at the kitchen table in a mesh underwear and a hospital gown she forgot to return.</p>
+      <p>This is not postpartum depression. This is the baby blues — the hormonal crash that hits 50–80% of postpartum people between days 2 and 5. Estrogen has dropped 100-fold. Progesterone has cratered. Her brain chemistry is reorganizing.</p>
+      <p>It will pass in 2 weeks. If it doesn't — that's Module 11.</p>
+      <p>But today, right now, she doesn't need a screening tool. She needs someone to hold the baby for 20 minutes while she showers. She needs someone to bring her water and say: <strong>"You're not crazy. This is your hormones. It passes. I'm here."</strong></p>
+      <div class="physician-note">
+        <div class="note-label">From the Physician</div>
+        <p>Day 3 is when I worry most. The milk comes in (engorgement, latch difficulty, supply panic). The hormones crash (tears, irritability, overwhelm). And the blood pressure peaks. Three physiologic tsunamis hitting simultaneously — and she's home, alone, with no medical team. Your doula visit on day 3 is the most clinically valuable visit you will make.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 5 -->
+  <div class="chapter">
+    <div class="time-marker"></div>
+    <div class="chapter-content">
+      <div class="time-label">Day 5</div>
+      <h2>The Headache <em>That Isn't Just a Headache</em></h2>
+      <p>She texts you: "Hey, I have a really bad headache. Tylenol isn't helping."</p>
+      <p>Most people would say: "Drink more water." "Get some rest." "You're just exhausted."</p>
+      <p>You ask one question: <strong>"Does it get better when you lie down?"</strong></p>
+      <p>If yes — possible post-dural puncture headache from the epidural. She needs a blood patch.</p>
+      <p>If no — possible postpartum preeclampsia. She needs her blood pressure checked. Now.</p>
+      <p>"It's actually worse when I sit up," she says. But then she adds: "Also, my face looks puffy. And I'm seeing sparkles."</p>
+      <p>Headache. Facial edema. Visual changes. Day 5 postpartum. This is preeclampsia until proven otherwise.</p>
+      <p><strong>You don't text back "drink water." You drive to her house. You take her blood pressure. It reads 158/102. You call the provider. You take her to L&D triage.</strong></p>
+      <div class="doula-moment">
+        <div class="moment-label">The Doula Moment</div>
+        <p>One question — "Does it get better when you lie down?" — sorts two completely different diagnoses. One needs a blood patch. The other can kill her in hours. You learned this in Module 1. You practiced it in Module 14. And today, on day 5, in her living room, you used it.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- INTERLUDE 2 -->
+<section class="interlude">
+  <div class="interlude-inner">
+    <blockquote>"She was discharged as healthy. She came back in an ambulance. The only thing that changed was — someone was watching."</blockquote>
+    <cite>— The First 72 Hours</cite>
+  </div>
+</section>
+
+<div class="timeline">
+
+  <!-- THE LESSON -->
+  <div class="chapter">
+    <div class="time-marker"></div>
+    <div class="chapter-content">
+      <div class="time-label">What You Carry</div>
+      <h2>This Is Why <em>You're Here</em></h2>
+      <p>You are not a nurse. You are not a doctor. You are not a midwife. You cannot diagnose. You cannot prescribe. You cannot treat.</p>
+      <p>But you can <strong>see.</strong></p>
+      <p>You can see the pad that's saturating too fast. You can see the incision that's redder than yesterday. You can see the woman who says "I'm fine" while her hands shake. You can see the headache that isn't just a headache, the fatigue that isn't just new-mom tired, the bleeding that stopped and then came back.</p>
+      <p>In the first 72 hours, you may be the only trained eyes in the room. The only person who knows that blood pressure peaks on day 3. The only person who knows that "cold and clammy" means something. The only person who asks the question that no one else thinks to ask.</p>
+      <p><strong>That is why you trained. That is why you learned. That is what this guide is for.</strong></p>
+      <p>Her life may depend on what you notice — and what you do next.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<section class="essay-footer">
+  <h3>Go Deeper</h3>
+  <p>This essay draws from the clinical content in these modules. Study them. Know them. They're the foundation of everything you just read.</p>
+  <div class="module-links">
+    <a href="../modules/m01-hypertension.html">M1: Hypertension</a>
+    <a href="../modules/m02-hemorrhage.html">M2: Hemorrhage</a>
+    <a href="../modules/m03-infection.html">M3: Infection</a>
+    <a href="../modules/m04-vital-signs.html">M4: Vital Signs</a>
+    <a href="../modules/m05-physiology.html">M5: Physiology</a>
+    <a href="../modules/m14-htn-emergencies.html">M14: HTN Emergencies</a>
+    <a href="../modules/m18-anesthesia.html">M18: Anesthesia</a>
+  </div>
+  <p class="copyright">© 2026 Labora Collective · <a href="https://diosara.com">A Diosa Ara Initiative</a> · Dr. Yamicia Connor, MD, OBGYN</p>
+</section>
+
+<script>
+// Intersection Observer for scroll animations
+const chapters = document.querySelectorAll('.chapter');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.animationPlayState = 'running';
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0)';
+    }
+  });
+}, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+chapters.forEach(ch => {
+  ch.style.opacity = '0';
+  ch.style.transform = 'translateY(30px)';
+  ch.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+  observer.observe(ch);
+});
+</script>
+</body>
+</html>

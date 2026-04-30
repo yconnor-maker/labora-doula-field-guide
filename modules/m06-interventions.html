@@ -1,14 +1,137 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Module 6: Common Interventions — Doula Field Guide | Labora Collective</title><link rel="stylesheet" href="../styles.css"></head><body>
-<nav class="app-nav"><div class="app-nav-inner"><a href="../" class="app-nav-brand"><em>Labora</em> Collective <span class="nav-sub">Doula Field Guide</span></a><ul class="app-nav-links"><li><a href="../#basic" class="active">Basic Tier</a></li><li><a href="../#pricing" class="cta-link">Get Access</a></li></ul></div></nav>
-<article class="module-page"><header class="module-page-header"><div class="tier-tag basic">Basic Tier · Module 6</div><h1>Common Interventions</h1><p class="subtitle">Inductions, cesareans, epidurals, vacuum and forceps deliveries, episiotomy, and postpartum medications. Understanding what these interventions are, why they're used, and what your client will experience helps you support informed decision-making and reduce fear of the unknown.</p></header>
-<div class="scope-banner"><strong>Scope of Practice</strong>You do not recommend or discourage interventions. You help your client understand what is being proposed, ask questions, and exercise informed consent or refusal.</div>
-<section class="content-section"><h2>Induction of Labor</h2><p>Labor induction starts labor artificially. Methods include: cervical ripening agents (misoprostol, Cervidil, Foley balloon), membrane sweeping, amniotomy (breaking the water), and IV oxytocin (Pitocin). Indications include: postdates (≥41 weeks), preeclampsia, PPROM, gestational diabetes with poor control, and maternal request at ≥39 weeks. Your role: help her understand the process is often slow (12–24+ hours), support her through early labor phases, and advocate for her comfort preferences.</p></section>
-<section class="content-section"><h2>Cesarean Delivery</h2><p>Surgical birth through an abdominal incision. Planned (scheduled) or unplanned (during labor). Common indications: malpresentation (breech), prior cesarean, placenta previa, non-reassuring fetal status, failure to progress. Recovery: 6–8 weeks, activity restrictions, incision monitoring. Gentle/family-centered cesarean options: clear drape, skin-to-skin in OR, delayed cord clamping.</p></section>
-<section class="content-section"><h2>Epidural Anesthesia</h2><p>Regional anesthesia placed in the epidural space of the spine. Provides pain relief from the waist down while the person remains awake. Side effects: hypotension (most common), urinary retention (catheter needed), pruritus (itching), shivering, headache (post-dural puncture, ~1%). Does NOT increase cesarean risk per current evidence. Your role: support her choice either way without judgment.</p></section>
-<section class="content-section"><h2>Postpartum Medications</h2><ul style="margin:8px 0 16px 20px;"><li><strong>Oxytocin:</strong> Given after delivery to contract the uterus and prevent hemorrhage</li><li><strong>Ibuprofen/Acetaminophen:</strong> First-line pain management, safe with breastfeeding</li><li><strong>Stool softeners:</strong> Docusate — prevent constipation and straining</li><li><strong>Iron supplements:</strong> If anemic from blood loss</li><li><strong>Anticoagulants:</strong> After cesarean in high-risk patients to prevent DVT</li></ul></section>
-<section class="quiz-section"><h3>Test Your Understanding</h3>
-<div class="quiz-question" id="q1"><p>1. The most common side effect of epidural anesthesia is:</p><button class="quiz-option" onclick="checkAnswer(this,'q1',true)">A) Hypotension (low blood pressure)</button><button class="quiz-option" onclick="checkAnswer(this,'q1',false)">B) Paralysis</button><button class="quiz-option" onclick="checkAnswer(this,'q1',false)">C) Allergic reaction</button><div class="quiz-feedback" id="q1-fb">Hypotension is the most common side effect — treated with IV fluids and position changes.</div></div>
-<div class="quiz-question" id="q2"><p>2. Why is oxytocin given after delivery?</p><button class="quiz-option" onclick="checkAnswer(this,'q2',true)">A) To contract the uterus and prevent hemorrhage</button><button class="quiz-option" onclick="checkAnswer(this,'q2',false)">B) To induce breastfeeding</button><button class="quiz-option" onclick="checkAnswer(this,'q2',false)">C) To reduce pain</button><div class="quiz-feedback" id="q2-fb">Post-delivery oxytocin is the single most effective intervention for preventing postpartum hemorrhage.</div></div></section>
-<nav class="module-nav"><a href="m05-physiology.html">← Module 5</a><a href="m07-vbac.html">Module 7 →</a></nav></article>
-<footer class="app-footer"><div class="footer-inner"><div class="footer-bottom"><p>© 2026 Labora Collective · <a href="https://diosara.com">A Diosa Ara Initiative</a></p></div></div></footer>
-<script>function checkAnswer(btn,qId,isCorrect){const q=document.getElementById(qId);const options=q.querySelectorAll('.quiz-option');const fb=document.getElementById(qId+'-fb');options.forEach(o=>{o.disabled=true;o.classList.remove('correct','incorrect');});if(isCorrect){btn.classList.add('correct');fb.className='quiz-feedback show correct-fb';}else{btn.classList.add('incorrect');options.forEach(o=>{if(o.onclick.toString().includes('true'))o.classList.add('correct');});fb.className='quiz-feedback show incorrect-fb';}fb.style.display='block';}</script></body></html>
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Module 6: Common Interventions — Doula Field Guide | Labora Collective</title><meta name="description" content="Induction, cesarean, epidural, vacuum, forceps, episiotomy — what they are, why they're used, and how to support informed choice."><link rel="stylesheet" href="../styles.css"></head>
+<body>
+<nav class="app-nav"><div class="app-nav-inner"><a href="../" class="app-nav-brand"><em>Labora</em> Collective <span class="nav-sub">Doula Field Guide</span></a><ul class="app-nav-links"><li><a href="../#basic" class="active">Basic Tier</a></li><li><a href="../field-kit/">Field Kit</a></li><li><a href="../#pricing" class="cta-link">Get Access</a></li></ul></div></nav>
+
+<article class="module-page">
+  <header class="module-page-header"><div class="tier-tag basic">Basic Tier · Module 6</div><h1>Common Interventions</h1><p class="subtitle">Inductions, cesarean delivery, epidural anesthesia, operative vaginal delivery, episiotomy, and postpartum medications. You don't need to approve or discourage any intervention — you need to understand what's happening so you can help your client ask questions, process information, and exercise informed consent in real time.</p></header>
+
+  <div class="scope-banner"><strong>Scope of Practice</strong>You do not recommend or discourage interventions. You help your client understand what is being proposed, ask questions, and exercise informed consent or refusal. You support her choice — not yours.</div>
+
+  <div class="objectives"><h3>What You'll Learn</h3><ul>
+    <li>Understand the major obstetric interventions and why they're used</li>
+    <li>Know the common medications used in labor and postpartum</li>
+    <li>Help your client formulate questions before, during, and after interventions</li>
+    <li>Support recovery from operative delivery</li>
+    <li>Distinguish elective from medically indicated interventions</li>
+  </ul></div>
+
+  <section class="content-section">
+    <h2>Induction of Labor</h2>
+    <p>Labor induction starts contractions artificially when waiting for spontaneous labor poses risk. Methods include:</p>
+    <ul style="margin:8px 0 16px 20px;">
+      <li><strong>Cervical ripening:</strong> Misoprostol (oral/vaginal), Cervidil (dinoprostone insert), Foley balloon catheter, Cook balloon (double balloon)</li>
+      <li><strong>Amniotomy:</strong> Breaking the membranes ("breaking the water") with an amniohook</li>
+      <li><strong>Oxytocin (Pitocin):</strong> IV infusion, titrated up. The workhorse of induction.</li>
+    </ul>
+    <p><strong>Common indications:</strong> postdates (≥41 weeks), preeclampsia, PPROM, GDM with poor control, oligohydramnios, growth restriction, maternal request ≥39 weeks (ARRIVE trial).</p>
+    <div class="clinical-note"><strong>From the Physician</strong>The ARRIVE trial (2018) showed that elective induction at 39 weeks in first-time mothers did not increase cesarean rates and actually decreased hypertension. This changed practice. "Elective" induction is no longer a dirty word — when it's truly elective and truly 39+ weeks. Your client needs to know: induction is often SLOW (12–24+ hours from start to baby). Set expectations. Bring snacks. This is a marathon, not a sprint.</div>
+  </section>
+
+  <section class="content-section">
+    <h2>Cesarean Delivery</h2>
+    <p>Surgical birth through an abdominal incision. ~32% of US births.</p>
+    <ul style="margin:8px 0 16px 20px;">
+      <li><strong>Planned/scheduled:</strong> Repeat cesarean, placenta previa, breech, maternal request</li>
+      <li><strong>Unplanned/urgent:</strong> Failure to progress, non-reassuring fetal status</li>
+      <li><strong>Emergency:</strong> Cord prolapse, uterine rupture, placental abruption — minutes matter</li>
+    </ul>
+    <p><strong>Recovery:</strong> Major abdominal surgery. 6–8 weeks of activity restrictions. Incision monitoring critical (Module 3). Driving restriction until she can brake safely (usually 2–3 weeks).</p>
+    <p><strong>Gentle/family-centered cesarean options:</strong> Clear drape, skin-to-skin in OR, delayed cord clamping, music, narration of birth, lowering the drape at delivery. These should be discussed prenatally with the provider.</p>
+  </section>
+
+  <section class="content-section">
+    <h2>Epidural Anesthesia</h2>
+    <p>Regional anesthesia placed in the epidural space. Provides pain relief from the waist down. The most common pain management method in US hospitals (~73% of vaginal births).</p>
+    <ul style="margin:8px 0 16px 20px;">
+      <li><strong>Works by:</strong> Blocking nerve transmission in the epidural space of the spinal column</li>
+      <li><strong>Common side effects:</strong> Hypotension (most common — treated with IV fluids), urinary retention (catheter), pruritus (itching), shivering, headache (PDPH, ~1% — see Module 18)</li>
+      <li><strong>Does NOT increase cesarean risk</strong> per current evidence</li>
+      <li><strong>May slightly increase:</strong> Instrumental delivery rate, length of second stage, need for augmentation</li>
+    </ul>
+    <p><strong>Your role:</strong> Support her choice either way without judgment. Do not advocate for or against epidurals. If she chooses one — celebrate. If she chooses to labor without — support. Both are valid.</p>
+  </section>
+
+  <section class="content-section">
+    <h2>Operative Vaginal Delivery</h2>
+    <ul style="margin:8px 0 16px 20px;">
+      <li><strong>Vacuum:</strong> Suction cup applied to fetal scalp. Used for prolonged second stage or non-reassuring fetal status. Risk: caput (swelling), cephalohematoma, rarely intracranial hemorrhage.</li>
+      <li><strong>Forceps:</strong> Metal instruments guided around fetal head. Less common now. Risk: facial bruising, nerve injury (temporary), maternal laceration.</li>
+    </ul>
+    <p>Both require informed consent and an experienced operator. Both have a "backup plan": if the instrument doesn't work, cesarean delivery follows immediately.</p>
+  </section>
+
+  <section class="content-section">
+    <h2>The B.R.A.I.N. Framework</h2>
+    <p>Teach your client this framework for any intervention decision:</p>
+    <div class="doula-action"><h4>B.R.A.I.N. Questions</h4><ul style="list-style:none;padding:0;">
+      <li style="padding:6px 0;padding-left:20px;position:relative;"><span style="position:absolute;left:0;">B</span> <strong>Benefits:</strong> What are the benefits of this intervention?</li>
+      <li style="padding:6px 0;padding-left:20px;position:relative;"><span style="position:absolute;left:0;">R</span> <strong>Risks:</strong> What are the risks?</li>
+      <li style="padding:6px 0;padding-left:20px;position:relative;"><span style="position:absolute;left:0;">A</span> <strong>Alternatives:</strong> What are the alternatives?</li>
+      <li style="padding:6px 0;padding-left:20px;position:relative;"><span style="position:absolute;left:0;">I</span> <strong>Intuition:</strong> What does my gut tell me?</li>
+      <li style="padding:6px 0;padding-left:20px;position:relative;"><span style="position:absolute;left:0;">N</span> <strong>Nothing:</strong> What happens if we do nothing (or wait)?</li>
+    </ul></div>
+  </section>
+
+  <section class="content-section">
+    <h2>Postpartum Medications</h2>
+    <ul style="margin:8px 0 16px 20px;">
+      <li><strong>Oxytocin (Pitocin):</strong> Given after delivery to contract the uterus and prevent PPH. Most important postpartum medication.</li>
+      <li><strong>Ibuprofen (Motrin) + Acetaminophen (Tylenol):</strong> First-line pain management. Alternating schedule. Safe with breastfeeding.</li>
+      <li><strong>Stool softeners (Docusate/Colace):</strong> Prevent constipation and straining — especially important after perineal laceration or cesarean.</li>
+      <li><strong>Iron supplements:</strong> If anemic from blood loss. Take with vitamin C for absorption. Can cause constipation.</li>
+      <li><strong>Anticoagulants (Enoxaparin/Lovenox):</strong> After cesarean in high-risk patients to prevent DVT (Module 17).</li>
+      <li><strong>Magnesium sulfate:</strong> Continued 24 hours postpartum for preeclampsia/seizure prevention (Module 14).</li>
+    </ul>
+  </section>
+
+  <section class="quiz-section"><h3>Test Your Understanding</h3>
+    <div class="quiz-question" id="q1"><p>1. The most common side effect of epidural anesthesia is:</p>
+      <button class="quiz-option" onclick="checkAnswer(this,'q1',true)">A) Hypotension (low blood pressure)</button>
+      <button class="quiz-option" onclick="checkAnswer(this,'q1',false)">B) Paralysis</button>
+      <button class="quiz-option" onclick="checkAnswer(this,'q1',false)">C) Permanent numbness</button>
+      <button class="quiz-option" onclick="checkAnswer(this,'q1',false)">D) Allergic reaction</button>
+      <div class="quiz-feedback" id="q1-fb">Hypotension is the most common side effect — treated with IV fluids and position changes. Per current evidence, epidurals do NOT increase cesarean rates.</div>
+    </div>
+    <div class="quiz-question" id="q2"><p>2. Postpartum oxytocin is given to:</p>
+      <button class="quiz-option" onclick="checkAnswer(this,'q2',true)">A) Contract the uterus and prevent hemorrhage</button>
+      <button class="quiz-option" onclick="checkAnswer(this,'q2',false)">B) Induce breastfeeding</button>
+      <button class="quiz-option" onclick="checkAnswer(this,'q2',false)">C) Reduce pain</button>
+      <button class="quiz-option" onclick="checkAnswer(this,'q2',false)">D) Prevent infection</button>
+      <div class="quiz-feedback" id="q2-fb">Post-delivery oxytocin is the single most effective intervention for preventing PPH. It contracts the uterus to compress bleeding vessels at the placental site.</div>
+    </div>
+    <div class="quiz-question" id="q3"><p>3. The ARRIVE trial showed that elective induction at 39 weeks in first-time mothers:</p>
+      <button class="quiz-option" onclick="checkAnswer(this,'q3',false)">A) Doubled the cesarean rate</button>
+      <button class="quiz-option" onclick="checkAnswer(this,'q3',true)">B) Did not increase cesarean rates and decreased hypertension</button>
+      <button class="quiz-option" onclick="checkAnswer(this,'q3',false)">C) Was never studied</button>
+      <button class="quiz-option" onclick="checkAnswer(this,'q3',false)">D) Increased neonatal complications</button>
+      <div class="quiz-feedback" id="q3-fb">The ARRIVE trial (Grobman et al., NEJM 2018) showed no increase in cesarean rates with 39-week induction and decreased rates of hypertensive disorders.</div>
+    </div>
+    <div class="quiz-question" id="q4"><p>4. In the B.R.A.I.N. framework, "N" stands for:</p>
+      <button class="quiz-option" onclick="checkAnswer(this,'q4',true)">A) Nothing — what happens if we do nothing or wait?</button>
+      <button class="quiz-option" onclick="checkAnswer(this,'q4',false)">B) Nurse — ask the nurse</button>
+      <button class="quiz-option" onclick="checkAnswer(this,'q4',false)">C) Next steps</button>
+      <button class="quiz-option" onclick="checkAnswer(this,'q4',false)">D) Necessary — is it necessary?</button>
+      <div class="quiz-feedback" id="q4-fb">"What happens if we do nothing?" is one of the most powerful questions in obstetric decision-making. It reframes the choice and reveals whether urgency is real or perceived.</div>
+    </div>
+    <div class="quiz-question" id="q5"><p>5. A gentle/family-centered cesarean may include:</p>
+      <button class="quiz-option" onclick="checkAnswer(this,'q5',true)">A) Clear drape, skin-to-skin in OR, delayed cord clamping, music</button>
+      <button class="quiz-option" onclick="checkAnswer(this,'q5',false)">B) General anesthesia</button>
+      <button class="quiz-option" onclick="checkAnswer(this,'q5',false)">C) No monitoring</button>
+      <button class="quiz-option" onclick="checkAnswer(this,'q5',false)">D) Shorter surgical time</button>
+      <div class="quiz-feedback" id="q5-fb">Family-centered cesarean options should be discussed prenatally. Many hospitals now offer clear drapes, immediate skin-to-skin, and delayed clamping as standard options.</div>
+    </div>
+  </section>
+
+  <section class="content-section"><h2>Key References</h2><ul style="font-size:0.9rem;line-height:1.6;color:var(--warm-gray);">
+    <li>Grobman WA et al., NEJM 2018: Labor Induction versus Expectant Management (ARRIVE Trial)</li>
+    <li>ACOG Practice Bulletin No. 209: Obstetric Analgesia and Anesthesia (2019)</li>
+    <li>ACOG Practice Bulletin No. 205: Vaginal Birth After Cesarean Delivery (2019)</li>
+    <li>WHO: Intrapartum Care for a Positive Childbirth Experience (2018)</li>
+  </ul></section>
+
+  <nav class="module-nav"><a href="m05-physiology.html">← Module 5: Physiology</a><a href="m07-vbac.html">Module 7: VBAC →</a></nav>
+</article>
+<footer class="app-footer"><div class="footer-inner"><div class="footer-bottom"><p>© 2026 Labora Collective · <a href="https://diosara.com">A Diosa Ara Initiative</a> · Dr. Yamicia Connor, MD, OBGYN</p></div></div></footer>
+<script>function checkAnswer(btn,qId,isCorrect){const q=document.getElementById(qId);const options=q.querySelectorAll('.quiz-option');const fb=document.getElementById(qId+'-fb');options.forEach(o=>{o.disabled=true;o.classList.remove('correct','incorrect');});if(isCorrect){btn.classList.add('correct');fb.className='quiz-feedback show correct-fb';}else{btn.classList.add('incorrect');options.forEach(o=>{if(o.onclick.toString().includes('true'))o.classList.add('correct');});fb.className='quiz-feedback show incorrect-fb';}fb.style.display='block';}</script>
+</body></html>

@@ -135,6 +135,43 @@ body {
   color: white;
 }
 
+/* ─── HAMBURGER MENU ─── */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 32px;
+  height: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  z-index: 110;
+}
+
+.hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--espresso);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
 /* ─── HERO ─── */
 .hero {
   text-align: center;
@@ -800,8 +837,53 @@ body {
 
 /* ─── RESPONSIVE ─── */
 @media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
   .app-nav-links {
     display: none;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: rgba(247, 243, 238, 0.98);
+    backdrop-filter: blur(12px);
+    flex-direction: column;
+    padding: 20px 24px;
+    gap: 0;
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  }
+
+  .app-nav-links.open {
+    display: flex;
+  }
+
+  .app-nav-links li {
+    width: 100%;
+  }
+
+  .app-nav-links a {
+    display: block;
+    padding: 12px 0;
+    font-size: 1rem;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .app-nav-links li:last-child a {
+    border-bottom: none;
+  }
+
+  .app-nav-links .cta-link {
+    display: block;
+    text-align: center;
+    margin-top: 8px;
+    padding: 12px 20px;
+  }
+
+  .hero {
+    padding: 80px 24px 60px;
   }
 
   .hero h1 {
@@ -824,11 +906,24 @@ body {
   .module-page-header h1 {
     font-size: 1.8rem;
   }
+
+  .quiz-section {
+    padding: 20px 16px;
+  }
+
+  .module-nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .module-nav a {
+    text-align: center;
+  }
 }
 
 /* ─── PRINT ─── */
 @media print {
-  .app-nav, .app-footer, .module-nav, .quiz-section { display: none; }
+  .app-nav, .app-footer, .module-nav, .quiz-section, .hamburger { display: none; }
   body { background: white; }
   .module-page { padding: 20px; }
 }
